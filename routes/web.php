@@ -42,6 +42,22 @@ Route::get('/login', function(){  return "Login"; })->name("site.login");
   });
 
 
+Route::get('/rota1', function() {
+    echo "Rota 1";
+
+})->name('site.rota1');
+
+
+
+Route::get('/rota2', function() {
+    return redirect()->route('site.rota1');
+
+})->name('site.rota2');
+
+//Route::redirect('/rota2', '/rota1');
+
+
+
 
 /* verbo http
 
