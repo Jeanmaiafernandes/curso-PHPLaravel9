@@ -29,6 +29,14 @@ Route::get('/sobre-nos', [SobreNosController::class, 'SobreNos']);
 
 Route::get('/contato', [ContatoController::class, 'Contato']);
 
+Route::get('/login', function(){  return "Login"; });
+
+Route::get('/clientes', function() { return "Clientes"; });
+
+Route::get('/fornecedores', function() { return "Fornecedores"; });
+
+Route::get('/produtos', function() { return "Produtos"; });
+
 
 
 
