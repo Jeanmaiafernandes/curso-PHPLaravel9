@@ -18,7 +18,7 @@ Status: {{ $fornecedores[1] ['status'] }}
 
     @empty($fornecedores[0] ['cnpj'])
     -vazio
-@endempty
+        @endempty
    @endisset
 @endisset
 
